@@ -12,7 +12,8 @@ const StudentSchema = new Schema({
     },
     email: String,
     department: String,
-    courses: [String]
+    courses: [String],
+    userId: String
 }, { timestamps: true })
 
 const Student = mongoose.model('Student', StudentSchema)
